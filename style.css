@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(background.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 20px 40px;
+  position: relative;
+}
+.logo {
+  width: 120px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.content {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.content h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+.content h1 span {
+  color: #ff3753;
+}
+.content button {
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  padding: 12px 25px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.content button img {
+  width: 15px;
+  margin-left: 10px;
+}
+.launching-time {
+  display: flex;
+}
+.launching-time div {
+  flex-basis: 100%;
+}
+.launching-time div p {
+  font-size: 60px;
+  margin-bottom: -14px;
+}
+.launching-time div .alignment-one{
+    padding: 0 0 0 35px;
+}
+.launching-time div .alignment-two{
+  padding: 15px;
+}
+.rocket {
+  width: 160px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocketAnimation 5s linear  infinite;
+}
+@keyframes rocketAnimation {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 100%;
+    }
+}
